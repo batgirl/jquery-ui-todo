@@ -2,10 +2,59 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="javascripts/app.js"></script>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1 class="title"><%= title %></h1>
+    <div class="row">
+      <div class="col col-md-6">
+        <div class="well">
+          <div id="accordion">
+            <h3 class="btn btn-default">Health</h3>
+            <div>
+              <ul>
+                <li class="draggable">Run for 15 miles</li>
+                <li class="draggable">Eat and drink only kale</li>
+                <li class="draggable">Bench press the closest friend</li>
+              </ul>
+            </div>
+            <h3 class="btn btn-default">Wealth</h3>
+            <div>
+              <ul>
+                <li class="draggable">Work for 20 hours with no breaks</li>
+                <li class="draggable">Look for silver coins on the ground</li>
+                <li class="draggable">Call everyone you know with money and make them give it to you except for the fact that you will never call them again</li>
+              </ul>
+            </div>
+            <h3 class="btn btn-default">Soul</h3>
+            <div>
+              <ul>
+                <li class="draggable">BREATHE</li>
+                <li class="draggable">Drink butter coffee</li>
+                <li class="draggable">Snuggle your cat</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-6" id="column2">
+        <div class="well">
+          <h3 class="btn btn-default">Daily Plan</h3>
+          <div>
+            <div id="droppable" class="ui-widget-header">
+              <ol>
+                <p class="placeholder">Drag your tasks here!</p>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
